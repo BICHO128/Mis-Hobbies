@@ -1,0 +1,218 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Estilos del encabezado */ 
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+header h1 {
+    margin: 0;
+}
+/* Estilos de la barra de navegación */
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px;
+}
+/* Estilos de los enlaces del menú */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+/* Estilos de los enlaces del menú al pasar el ratón */
+nav ul li a:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos de las secciones */
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Estilos de los títulos de las secciones */
+section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Estilos de imágenes y videos */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+/* Estilos de listas */
+ul {
+    padding-left: 20px;
+}
+
+/* Estilos del aside */
+aside {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+/* Estilos del título del aside */
+aside h2 {
+    color: #2c3e50;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #34495e;
+    color: white;
+    border-radius: 5px;
+}
+
+footer a {
+    color: #3498db;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    /* Estilos de los enlaces del menú */
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+/* Estilos personalizados adicionales a Bootstrap */
+
+/* Ajustes generales */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Personalización del header */
+  header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Personalización de las cards */
+  .card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Personalización del carrusel */
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  /* Personalización de la tabla */
+  .table {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Personalización de botones */
+  .btn {
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Personalización de imágenes */
+  img {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Personalización del footer */
+  footer {
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #17a2b8 !important;
+    text-decoration: underline;
+  }
+  
+  /* Estilos responsivos adicionales */
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 300px;
+    }
+  
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .btn-group .btn {
+      margin-bottom: 5px;
+    }
+  }
+  
+  
