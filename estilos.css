@@ -11,7 +11,7 @@ body {
 
 /* Estilos del encabezado */ 
 header {
-    background-color: #3498db;
+    background: linear-gradient(135deg, #3498db, #1a5276);
     color: white;
     padding: 1rem;
     border-radius: 5px;
@@ -26,7 +26,8 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 nav ul li {
@@ -213,6 +214,127 @@ body {
     .btn-group .btn {
       margin-bottom: 5px;
     }
+  }
+  
+  /* Estilos para el modo oscuro - Mejorados */
+  .dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dark-mode .card,
+  .dark-mode section,
+  .dark-mode .modal-content,
+  .dark-mode .dropdown-menu {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-color: #333;
+  }
+  
+  .dark-mode .card-header {
+    border-bottom-color: #333;
+  }
+  
+  .dark-mode .navbar-dark .navbar-nav .nav-link {
+    color: #e0e0e0;
+  }
+  
+  .dark-mode .dropdown-item {
+    color: #e0e0e0;
+  }
+  
+  .dark-mode .dropdown-item:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode .table {
+    color: #e0e0e0;
+    border-color: #333;
+  }
+  
+  .dark-mode .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .dark-mode .alert-success {
+    background-color: #0d3a0d;
+    color: #d4edda;
+    border-color: #155724;
+  }
+  
+  .dark-mode .form-control {
+    background-color: #333;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+  
+  .dark-mode .form-control:focus {
+    background-color: #3a3a3a;
+    color: #fff;
+    border-color: #666;
+    box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+  }
+  
+  .dark-mode .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+  }
+  
+  .dark-mode .visit-counter {
+    background-color: #333 !important;
+    color: #e0e0e0 !important;
+  }
+  
+  /* Estilos para animaciones */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  /* Estilos para el modal de imágenes (lightbox) */
+  .modal-img {
+    max-height: 80vh;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para videos */
+  .custom-video-player {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos para el contador de visitas */
+  .visit-counter {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-block;
+  }
+  
+  /* Estilos para el formulario de contacto */
+  .contact-form {
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark-mode .contact-form {
+    background-color: rgba(255, 255, 255, 0.05);
   }
   
   
